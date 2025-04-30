@@ -1,0 +1,66 @@
+answer_question_task_1:
+  description: >
+    Provide a detailed relevant document summary corresponding to the user query:
+    
+    USER QUERY: ```{query}```
+    CONTEXT: ```{document_1}```
+
+    Also, provide the URL for the relevant documents so that the user may look
+    deeper into it. If you feel the answer is not found in the context, reply
+    "I could not find any relevant answer for the query". Since your response 
+    will be summarised later by a text-summariser, you can be detailed in your
+    response.
+  expected_output: >
+    A Detailed Summarised Answer to the question in a markdown format.
+  async_execution: true
+
+answer_question_task_2:
+  description: >
+    Provide a detailed relevant document summary corresponding to the user query:
+    
+    USER QUERY: ```{query}```
+    CONTEXT: ```{document_2}```
+
+    Also, provide the URL for the relevant documents so that the user may look
+    deeper into it. If you feel the answer is not found in the context, reply
+    "I could not find any relevant answer for the query". Since your response 
+    will be summarised later by a text-summariser, you can be detailed in your
+    response.
+  expected_output: >
+    A Detailed Summarised Answer to the question in a markdown format.
+  async_execution: true
+
+answer_question_task_3:
+  description: >
+    Provide a detailed relevant document summary corresponding to the user query:
+    
+    USER QUERY: ```{query}```
+    CONTEXT: ```{document_3}```
+
+    Also, provide the URL for the relevant documents so that the user may look
+    deeper into it. If you feel the answer is not found in the context, reply
+    "I could not find any relevant answer for the query". Since your response 
+    will be summarised later by a text-summariser, you can be detailed in your
+    response.
+  expected_output: >
+    A Detailed Summarised Answer to the question in a markdown format.
+  async_execution: true
+
+content_writing_task:
+  description: >
+    Give a brief summary to the user query. You are aided by 3 QnA experts,
+    who are independently provided 3 separate documents internal to Innovaccer and
+    are asked to provide the answer to the same user query to you.
+    
+    USER QUERY: ```{query}```.
+    
+    If the answer is not found in the summaries provided to you by the QnA experts,
+    reply in negative. Follow the markdown format in answering the question.
+    Also, cite the relevant URL within the output text for the user to navigate to,
+    if they need to dig deeper.
+  expected_output: >
+    A well-formatted summarised answer to the question in a markdown format.
+    Try answering in a mix of Paragraphs, headers, subheaders and bullet points,
+    wherever applicable.
+  async_execution: false
+

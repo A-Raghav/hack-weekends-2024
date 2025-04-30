@@ -1,0 +1,1 @@
+This directory is supposed to contain various Jira tickets and Confluence pages scraped as JSON blobs. For confidentiality purposes, these have been removed from the directory.
